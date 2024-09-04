@@ -1,0 +1,3 @@
+[submodule "code/cneuromod_extract_tseries"]
+	path = code/cneuromod_extract_tseries
+	url = git@github.com:courtois-neuromod/cneuromod_extract_tseries.git
