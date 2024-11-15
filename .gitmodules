@@ -1,3 +1,13 @@
 [submodule "code/cneuromod_extract_tseries"]
 	path = code/cneuromod_extract_tseries
 	url = git@github.com:courtois-neuromod/cneuromod_extract_tseries.git
+[submodule "stimuli/videos/friends"]
+	path = stimuli/movies/friends
+	url = git@github.com:courtois-neuromod/friends.stimuli.git
+	datalad-id = bbbf34b9-31aa-4e35-b1ed-36525c6d7ce3
+	datalad-url = git@github.com:courtois-neuromod/friends.stimuli.git
+[submodule "stimuli/videos/movie10"]
+	path = stimuli/movies/movie10
+	url = git@github.com:courtois-neuromod/movie10.stimuli.git
+	datalad-id = a9ff7995-4d2d-4ea7-9b23-ec17f0c66a61
+	datalad-url = git@github.com:courtois-neuromod/movie10.stimuli.git
