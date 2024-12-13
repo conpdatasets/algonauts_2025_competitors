@@ -64,7 +64,7 @@ By downloading and using the Algonauts Project 2025 challenge data, you agree to
 4. In case you share or redistribute this dataset, you will (a) give appropriate credit by citing the relevant work, (b) indicate any changes that you have made to the dataset, and (c) share or redistribute any derivative data under the same Terms of Use.
 5. This data comes with no warranty or guarantee of any kind, and you accept full liability.
 6. You will require anyone on my team who utilizes these data to comply with this data use agreement.
-7. You sre 18 or older, and you understand that the content of certain Challenge movie stimuli might be disturbing to some viewers.
+7. You are 18 or older, and you understand that the content of certain Challenge movie stimuli might be disturbing to some viewers.
 
 ### Data download
 
