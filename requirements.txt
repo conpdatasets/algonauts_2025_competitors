@@ -1,0 +1,15 @@
+argparse==1.4.0
+h5py==3.12.1
+librosa==0.10.2.post1
+matplotlib==3.9.2
+moviepy==1.0.3
+nilearn==0.10.4
+numpy==1.26.2
+pandas==2.1.1
+pytorch==2.1.2
+pytorchvideo==0.1.5
+scikit-learn==1.5.1
+scipy==1.13.1
+tqdm==4.65.0
+torchvision==0.16.2
+transformers==4.33.3
