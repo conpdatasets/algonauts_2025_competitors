@@ -170,10 +170,10 @@ The [`code/cneuromod_extract_tseries`](https://github.com/courtois-neuromod/cneu
 
 ### Challenge baseline encoding model
 
-The [`code/algonauts_2025_challenge_baseline_model`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/algonauts_2025_challenge_baseline_model) folder contains code used to build the challenge baseline encoding model, divided in the following sub-folders:
+The [`code/challenge_baseline_model`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model) folder contains code used to build the challenge baseline encoding model, divided in the following sub-folders:
 
-* **[`../01_stimulus_feature_extraction/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/algonauts_2025_challenge_baseline_model/01_stimulus_feature_extraction):** extract the stimulus features used to train the encoding models.
-* **[`../02_encoding_model_training/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/algonauts_2025_challenge_baseline_model/02_encoding_model_training):** train the encoding models, and save their weights.
-* **[`../03_encoding_model_testing/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/algonauts_2025_challenge_baseline_model/03_encoding_model_testing):** test the encoding models.
+* **[`../01_stimulus_feature_extraction/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/01_stimulus_feature_extraction):** extract the stimulus features used to train the encoding models.
+* **[`../02_encoding_model_training/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/02_encoding_model_training):** train the encoding models, and save their weights.
+* **[`../03_encoding_model_testing/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/03_encoding_model_testing):** test the encoding models.
 
 To run this code, you will first need to install [these required libraries](https://github.com/courtois-neuromod/algonauts_2025.competitors/blob/main/requirements.txt).
