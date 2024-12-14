@@ -136,7 +136,7 @@ different attributes of the language transcripts:
 - **`durations_per_tr`:** Duration (in seconds) of each word spoken during the chunk.
 
 
-#### fMRI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#### fMRI
 
 The Algonauts 2025 Challenge uses fMRI data from four [CNeuromod](https://www.cneuromod.ca/) subjects (`sub-01`, `sub-02`, `sub-03` and `sub-05`). For each subject, the data include fMRI responses to each movie, brain atlases, and the number of samples (in chunks of 1.49s) for the withheld fMRI responses to the test movie stimuli.
 
