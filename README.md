@@ -86,27 +86,98 @@ During this second phase, the winning models will be selected based on the accur
 
 ### Data description 
 
-#### Stimuli !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#### Stimuli
 
-The stimuli consist of movie visual frames, audio samples, and time-stamped language transcripts.
+The multimodal (**audio**, **visual** and **language**) stimuli of the Algonauts 2025 challenge consist of `.mkv` files of audiovisual movies, and of `.tsv` files that contain corresponding timestamped movie transcripts.
 
-- What the data is (stimuli description)
-- Data info from Obsidian and tutorial
+##### .mkv files (audiovisual movie stimuli)
 
+The `.mkv` files consist of movies that combine the visual and audio modalities, for seasons 1 to 7 of Friends and for Movie10.
 
+###### Friends (seasons 1-7)
 
+The `.mkv` files for seasons 1 to 7 of Friends are found at `../stimuli/movies/friends/s<season>/`, and have the naming convention `friends_s-<season>e<episode><episode_split>.mkv`, where:
+- **`season`:** Number indicating the Friends season.
+- **`episode`:** Number indicating the Friends episode.
+- **`episode_split`:** Full episodes were split into shorter (~12 min) segments watched by participants inside the MRI in order to reduce the duration of fMRI data acquisition runs. Letters indicate the split of each episode. Most Friends episodes are split into two parts (i.e., splits `a` and `b`), but a handful of longer episodes are split into four parts (i.e., splits `a`, `b`, `c` and `d`).
 
+###### Movie10
 
+The `.mkv` files for Movie10 are found at `../stimuli/movies/movie10/<movie>/`, and have the naming convention `<movie><movie_split>.mkv`, where:
+- **`movie`:** String indicating the movie name.
+- **`movie_split`:** Number indicating the movie split. Each movie was split into several segments to limit the duration of consecutive fMRI data acquisition runs.
 
+##### .tsv files (timestamped movie transcripts)
 
+The `.tsv` files contain the timestamped movie transcripts, that is, transcripts of spoken content (dialogue) in the movie stimuli, for seasons 1 to 7 of Friends and for Movie10.
+
+###### Friends (seasons 1-7)
+
+The `.tsv` files for seasons 1 to 7 of Friends are found at `../stimuli/transcripts/friends/s<season>/`, and have the naming convention `friends_s-<season>e<episode><episode_split>.tsv`, where:
+- **`season`:** Number indicating the Friends season.
+- **`episode`:** Number indicating the Friends episode.
+- **`episode_split`:** Letter indicating the split of the episode. Most Friends episodes are split into two parts (i.e., splits `a` and `b`), but a handful of longer episodes are split into four parts (i.e., splits `a`, `b`, `c` and `d`).
+
+###### Movie10
+
+The `.tsv` files for Movie10 are found at `../stimuli/transcripts/movie10/<movie>/`, and have the naming convention `movie10_<movie><movie_split>.tsv`, where:
+- **`movie`:** String indicating the movie name.
+- **`movie_split`:** Number indicating the movie split.
+
+###### *.tsv* file content
+
+The `.tsv` files splits transcribed movie dialogue into chunks of 1.49 seconds, where each **row** of the `.tsv` file corresponds to one such chunk. This segmentation was performed to facilitate alignment with the fMRI data, since fMRI volumes were acquired with a repetition time (TR) of 1.49 seconds (that is, one fMRI sample was acquired every 1.49 seconds). If no words were spoken during a specific chunk, the corresponding `.tsv` file row will be empty.
+
+The **columns** of the `.tsv` files consist of
+different attributes of the language transcripts:
+- **`text_per_tr`:** Sentence consisting of words that were spoken during the chunk of interest (i.e., words with word offset within the chunk of interest, even if their onset was in the previous chunk).
+- **`words_per_tr`:** List of individual words that were spoken during the chunk of interest.
+- **`onsets_per_tr`:** Starting time (in seconds) of each word spoken during the chunk, relative to movie onset.
+- **`durations_per_tr`:** Duration (in seconds) of each word spoken during the chunk.
 
 
 #### fMRI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-The fMRI data consist of whole-brain responses for four CNeuroMod subjects (sub-01, sub-02, sub-03 and sub-05), normalized to the Montreal Neurological Institute (MNI) spatial template ([Brett et al., 2002](https://doi.org/10.1038/nrn756)), and divided into 1,000 functionally defined parcels ([Schaefer et al., 2018](https://doi.org/10.1093/cercor/bhx179)).
+The Algonauts 2025 Challenge uses fMRI data from four [CNeuromod](https://www.cneuromod.ca/) subjects (`sub-01`, `sub-02`, `sub-03` and `sub-05`). For each subject, the data include fMRI responses to each movie, brain atlases, and the number of samples (in chunks of 1.49s) for the withheld fMRI responses to the test movie stimuli.
 
-- What the data is (fMRI description)
-- Data info from Obsidian and tutorial
+##### fMRI responses
+
+The fMRI responses are found at `../fmri/sub-0X/func/`. They consist of whole-brain fMRI responses to
+seasons 1 to 6 of Friends and to Movie10 for four subjects. These fMRI responses are normalized to the Montreal Neurologcal Institute (MNI) spatial template ([Brett et al., 2002](https://doi.org/10.1038/nrn756)), processed as time series whose signal is assigned to 1,000 functionally defined brain parcels ([Schaefer et al., 2018](https://doi.org/10.1093/cercor/bhx179)), and saved in `.h5` files (one file for Friends season 1-6 and one for Movie10 for each subject).
+
+Each `.h5` file consists of multiple fMRI datasets, corresponding to different movie segments, where every dataset consists of a 2D array of shape `(N samples, 1,000 parcels)`. Since the fMRI responses were collected with a repetition time (TR) of 1.49 seconds, one fMRI sample was recorded every 1.49 seconds worth of movie watching.
+
+###### Friends (seasons 1-6)
+
+For fMRI responses to Friends, the datasets within the `.h5` files have the following naming convention `ses-<recording_session>_task-s<season>e<episode><episode_split>`, where:
+- **`recording_session`:** Number indicating the fMRI recording session (data were acquired over multiple scanning sessions spread across multiple days).
+- **`season`:** Number indicating the Friends season.
+- **`episode`:** Number indicating the Friends episode.
+- **`episode_split`:** Letter indicating the split of the episode. Most Friends episodes are split into two parts (i.e., splits `a` and `b`), but a handful of longer episodes are split into four parts (i.e., splits `a`, `b`, `c` and `d`).
+
+<font color='red'><b>NOTE:</b></font> most, but not all Friends episodes were presented according to the series order (for example, fMRI responses for episode 1 of season 1 were collected during the second or third recording session).
+
+<font color='red'><b>MISSING fMRI DATA:</b></font>
+* Subject 2 is missing `s05e20a`.
+* Subject 5 is missing `s04e01a`, `s04e01b` and `s04e13b`.
+
+###### Movie10
+
+For fMRI responses to Movie10, fMRI datasets were saved within `.h5` files (one per subject) according to the naming convention `ses-<recording_session>_task-<movie><movie_split>_run-<run_number>`, where:
+- **`recording_session`:** Number indicating the fMRI recording session (movie splits were acquired over multiple sessions spread over many days).
+- **`movie`:** String indicating the movie name.
+- **`movie_split`:** Number indicating the movie split.
+- **`run_number`:** Number (`1` or `2`) indicating whether the movie was presented for the first or second time. Only applies to datasets for movies *Life* and *Hidden figures*, since these two movies were presented twice to each subject (whereas all other movies were only presented once).
+
+##### MRI atlases
+
+The MRI atlases are found at `../fmri/sub-0X/atlas/`. They were used to assign whole-brain fMRI signal to 1,000 functionally defined brain parcels from the Schaefer brain atlas ([Schaefer et al., 2018](https://doi.org/10.1093/cercor/bhx179)). Subject-specific atlases can be used to project a subject's 1,000 parcel-wise data (e.g., fMRI responses, Pearson's $r$ scores) back into a 3D brain volume space for plotting.
+
+Each atlas file is a 3D array of shape of `(97 voxels, 115 voxels, 97 voxels)`, where each brain voxel is assigned a parcel ID between 1 and 1,000; zeros represent areas outside the brain.
+
+##### fMRI sample number for the test movie stimuli
+
+These files are found at `../fmri/sub-0X/target_samples_number/`, and indicate the number of fMRI response samples in each timeseries from Friends season 7 for each subject. These fMRI timeseries are withheld to test model accuracy throughout the Model Building phase, but the number of samples per timeseries is disclosed for each subject. You will use these files in tutorial `Section 4` to learn how to prepare challenge submissions.
 
 ### Data download
 
@@ -166,14 +237,14 @@ datalad get -r -J8 fmri/sub-01/*
 
 ### fMRI preprocessing
 
-The [`code/cneuromod_extract_tseries`](https://github.com/courtois-neuromod/cneuromod_extract_tseries/tree/ff31d12b8421c931e39cabcbb55339da1e9f073d) folder contains the code used to preprocess [CNeuroMod](https://www.cneuromod.ca/)'s raw fMRI responses used in the challenge.
+The [`../code/cneuromod_extract_tseries`](https://github.com/courtois-neuromod/cneuromod_extract_tseries/tree/ff31d12b8421c931e39cabcbb55339da1e9f073d) folder contains the code used to preprocess [CNeuroMod](https://www.cneuromod.ca/)'s raw fMRI responses used in the challenge.
 
 ### Challenge baseline encoding model
 
-The [`code/challenge_baseline_model`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model) folder contains code used to build the challenge baseline encoding model, divided in the following sub-folders:
+The [`../code/challenge_baseline_model`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model) folder contains code used to build the challenge baseline encoding model, divided in the following sub-folders:
 
 * **[`../01_stimulus_feature_extraction/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/01_stimulus_feature_extraction):** extract the stimulus features used to train the encoding models.
 * **[`../02_encoding_model_training/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/02_encoding_model_training):** train the encoding models, and save their weights.
 * **[`../03_encoding_model_testing/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/03_encoding_model_testing):** test the encoding models.
 
-To run this code, you will first need to install [these required libraries](https://github.com/courtois-neuromod/algonauts_2025.competitors/blob/main/requirements.txt).
+To run this code, you will first need to install [these libraries](https://github.com/courtois-neuromod/algonauts_2025.competitors/blob/main/requirements.txt).
