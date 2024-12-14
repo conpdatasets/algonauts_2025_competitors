@@ -33,6 +33,8 @@ To facilitate participation, we provide a [development kit](https://colab.resear
 3. Training and validating an fMRI encoding model.
 4. Preparing the predicted fMRI responses for the test stimuli in the correct format for submission to [Codabench](https://www.codabench.org/competitions/4313/).
 
+You can run this tutorial either on [Colab](https://colab.research.google.com/drive/1fop0zvaLBLBagvJRC-HDqGDSgQElNWZB?usp=sharing), or on [Jupyter Notebook](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/tutorial/algonauts_2025_challenge_tutorial.ipynb).
+
 ### Challenge Rules
 
 1. Challenge participants can use any encoding model derived from any source and trained on any type of data. However, using recorded brain responses for Friends season 7 or the OOD movie stimuli is prohibited.
@@ -124,7 +126,7 @@ The `.tsv` files for Movie10 are found at `../stimuli/transcripts/movie10/<movie
 - **`movie`:** String indicating the movie name.
 - **`movie_split`:** Number indicating the movie split.
 
-###### *.tsv* file content
+###### .tsv file content
 
 The `.tsv` files splits transcribed movie dialogue into chunks of 1.49 seconds, where each **row** of the `.tsv` file corresponds to one such chunk. This segmentation was performed to facilitate alignment with the fMRI data, since fMRI volumes were acquired with a repetition time (TR) of 1.49 seconds (that is, one fMRI sample was acquired every 1.49 seconds). If no words were spoken during a specific chunk, the corresponding `.tsv` file row will be empty.
 
