@@ -21,9 +21,9 @@ The challenge is based on data from the Courtois Project on Neuronal Modelling (
 ### Challenge phases
 
 The challenge consists of three phases:
-* **Model building phase:** During the model building phase you will train and test your encoding models using movie stimuli and fMRI responses from the same distribution.
-* **Model selection phase:** During the model selection phase the winning models will be selected based on the accuracy of their predicted fMRI responses for out-of-distribution (OOD) movie stimuli.
-* **Post-Challenge phase:** After the challenge we will open an indefinite post-challenge phase, which will serve as a public benchmark. This benchmark will consist of two separate leaderboards that will rank encoding models based on their fMRI predictions for in-distribution (Friends season 7) or out-of-distribution (OOD movies) multimodal movie stimuli, respectively.
+* **Model building phase (6 months, January 6 2025 - July 6 2025):** During the model building phase, participants will train and test their encoding models using movie stimuli and fMRI responses from the same distribution. For model training, we provide movie stimuli and corresponding fMRI responses for all episodes of seasons 1 to 6 of the sitcom Friends. We also provide movie stimuli and corresponding fMRI responses from the Movie10 dataset which includes four movies. For model testing, we provide movie stimuli for all episodes of seasons 7 of Friends, and withhold the corresponding fMRI responses. Challenge participants can test their encoding models by submitting predicted fMRI responses for Friends season 7 (infinite number of submissions).
+* **Model selection phase (1 week, July 6 2025 - July 13 2025):** During the model selection phase, the winning models will be selected based on the accuracy of their predicted fMRI responses for out-of-distribution (OOD) movie stimuli. Out-of-distribution (OOD) movie stimuli will be provided, while the corresponding fMRI responses will be withheld. The nature of the OOD movie stimuli will be revealed at the beginning of the model selection phase. Participants can submit their encoding model’s predicted fMRI responses for the OOD movie stimuli to Codabench (maximum ten submissions).
+* **Post-Challenge phase (indefinite, from July 13 2025):** After the challenge, we will open an indefinite post-challenge phase, which will serve as a public benchmark. This benchmark will consist of two separate leaderboards that will rank encoding models based on their fMRI predictions for in-distribution (Friends season 7) or out-of-distribution (OOD movies) multimodal movie stimuli, respectively.
 
 ### Challenge development kit
 
@@ -31,7 +31,7 @@ To facilitate participation, we provide a [development kit](https://colab.resear
 1. Familiarizing with the challenge data.
 2. Extracting the stimulus features used to train and validate an fMRI encoding model.
 3. Training and validating an fMRI encoding model.
-4. Preparing the predicted fMRI responses for the test stimuli in the correct format for submission to [Codabench](https://www.codabench.org/competitions/4313/).
+4. Preparing the predicted fMRI responses for the test stimuli in the correct format to submit to [Codabench](https://www.codabench.org/competitions/4313/).
 
 You can run this tutorial either on [Colab](https://colab.research.google.com/drive/1fop0zvaLBLBagvJRC-HDqGDSgQElNWZB?usp=sharing), or on [Jupyter Notebook](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/tutorial/algonauts_2025_challenge_tutorial.ipynb).
 
@@ -67,26 +67,26 @@ If you use any of the resources, data or code provided for the Algonauts Project
 
 ![Algonauts 2025 logo](media/figure_2.png)
 
-### Data overview 
+### Data overview
 
 The [`stimuli`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/stimuli) and [`fmri`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/fmri) folders contain the dataset of the Algonauts Project 2025 challenge.
 
 For a demonstration of how to use the challenge data to train and evaluate encoding models of the brain, please see the challenge [development kit](https://colab.research.google.com/drive/1fop0zvaLBLBagvJRC-HDqGDSgQElNWZB?usp=drive_link).
 
-#### Model building phase
+#### Model building phase (6 months, January 6 2025 - July 6 2025)
 
 During this first phase, you will train and test encoding models using movie stimuli and fMRI responses from the same distribution.
 
 - **Model Training.** For model training, we provide 55 hours of movie stimuli and corresponding fMRI responses for each of the four subjects for all episodes of seasons 1 to 6 of the sitcom *Friends*. We also provide 10 hours of movie stimuli and corresponding fMRI responses from the *Movie10* dataset for which the same four subjects watched the following four movies: *The Bourne Supremacy*, *Hidden Figures*, *Life* (a BBC nature documentary), and *The Wolf of Wall Street*. Each movie was presented to each subject once, except for *Life* and *Hidden Figures* which were presented twice. You can train their encoding models using these data.
 - **Model Testing.** For model testing, we provide 10 hours of movie stimuli for all episodes of seasons 7 of the Friends dataset, and withhold the corresponding fMRI responses for each subject. You can test your encoding models against the withheld fMRI responses by submitting predicted fMRI responses for Friends season 7 to [Codabench](https://www.codabench.org/competitions/4313/).
 
-#### Model selection phase
+#### Model selection phase (1 week, July 6 2025 - July 13 2025)
 
 During this second phase, the winning models will be selected based on the accuracy of their predicted fMRI responses for withheld out-of-distribution (OOD) movie stimuli.
 
 - **Model Testing.** At the beginning of the model selection phase, we will provide 2 hours of OOD movie stimuli and withhold the corresponding fMRI responses for each of the four subjects. The nature of the OOD movie stimuli will not be revealed until the beginning of the model selection phase. To participate in the winners selection process, you can submit your encoding model's predicted fMRI responses for the OOD movie stimuli to [Codabench](https://www.codabench.org/competitions/4313/).
 
-### Data description 
+### Data description
 
 #### Stimuli
 
