@@ -14,13 +14,14 @@ modality : str
 hrf_delay : int
 	fMRI detects the BOLD (Blood Oxygen Level Dependent) response, a signal
 	that reflects changes in blood oxygenation levels in response to activity
-	in the brain. Blood flow increases to a given brain region in response its
-	activity. This vascular response, which follows the hemodynamic response
-	function (HRF), takes time. Typically, the HRF peaks around 5–6 seconds
-	after a neural event: this delay reflects the time needed for blood
+	in the brain. Blood flow increases to a given brain region in response to
+	its activity. This vascular response, which follows the hemodynamic
+	response function (HRF), takes time. Typically, the HRF peaks around 5–6
+	seconds after a neural event: this delay reflects the time needed for blood
 	oxygenation changes to propagate and for the fMRI signal to capture them.
-	Therefore, this parameter introduces a delay between stimulus samples and
-	fMRI samples. For example, with a hrf_delay of 3, if the fMRI sample of
+	Therefore, this parameter introduces a delay between stimulus chunks and
+	fMRI samples for a better correspondence between input stimuli and the
+	brain response. For example, with a hrf_delay of 3, if the fMRI sample of
 	interest is 20, the corresponding stimulus sample will be 17.
 stimulus_window : int
 	Integer indicating how many stimulus feature samples are used to model each
