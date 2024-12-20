@@ -54,7 +54,7 @@ You can run this tutorial either on [Colab](https://colab.research.google.com/dr
 - [Codabench Submission Walkthrough Video]
 - [CNeuroMod](https://www.cneuromod.ca/)
 
-### Citations
+### Citation
 
 If you use any of the resources, data or code provided for the Algonauts Project 2025 challenge, please cite the following paper:
 
