@@ -1,6 +1,6 @@
 # The Algonauts Project 2025 Challenge
 
-![Algonauts 2025 logo](media/algonauts_2025_logo.png)
+![Algonauts 2025 logo](media/algonauts_2025_banner_and_logo.png)
 
 This GitHub repository contains data and code for the Algonauts Project 2025 challenge. If you experience problems with the data or code, please get it touch with the Algonauts Team at (algonauts.mit@gmail.com).
 
