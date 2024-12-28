@@ -184,7 +184,7 @@ These files are found at `../fmri/sub-0X/target_samples_number/`, and indicate t
 
 #### Terms
 
-The CNeuroMod data used in the Algonauts 2025 Challenge has been openly shared under a Creative Commons [CC0 license](https://creativecommons.org/public-domain/cc0/) by a subset of CNeuroMod participants through the Canadian Open Neuroscience Platform (CONP), funded by Brain Canada and based at McGill University, Canada. Participants provided informed consent both to participate in the CNeuroMod study conducted at CIUSSS du Centre-Sud-de-l’île-de-Montréal and, separately, to share their data through the CONP. The CC0 license enables the Algonauts 2025 team to freely create and distribute derivative works, without restrictions, and the Algonauts 2025 challenge data is likewise distributed under a CC0 license.
+The CNeuroMod data used in the Algonauts 2025 Challenge has been openly shared under a [Creative Commons CC0 license](https://creativecommons.org/public-domain/cc0/) by a subset of CNeuroMod participants through the Canadian Open Neuroscience Platform (CONP), funded by Brain Canada and based at McGill University, Canada. Participants provided informed consent both to participate in the CNeuroMod study conducted at CIUSSS du Centre-Sud-de-l’île-de-Montréal and, separately, to share their data through the CONP. The CC0 license enables the Algonauts 2025 team to freely create and distribute derivative works, without restrictions, and the Algonauts 2025 challenge data is likewise distributed under a CC0 license.
 
 By downloading and using the Algonauts Project 2025 challenge data, you confirm that you are 18 or older, and you understand that the content of certain challenge movie stimuli might be disturbing to some viewers.
 
