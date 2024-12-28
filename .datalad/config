@@ -1,2 +1,4 @@
 [datalad "dataset"]
 	id = 5d20a1ae-3571-4de8-94c8-8ddb416cd3b0
+[datalad "get"]
+	subdataset-source-candidate-620cneuromodhttp = https://github.com/courtois-neuromod/{name}.stimuli.git
