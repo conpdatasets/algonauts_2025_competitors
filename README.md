@@ -56,7 +56,7 @@ You can run this tutorial either on [Colab](https://colab.research.google.com/dr
 
 ### Citation
 
-If you use any of the resources, data or code provided for the Algonauts Project 2025 challenge, please cite the following papers:
+If you use any of the resources provided for the Algonauts Project 2025 challenge, please cite the following papers:
 
 > * Gifford AT, Bersch D, St-Laurent M, Pinsard B, Boyle J, Bellec L, Oliva A, Roig G, Cichy RM. 2025. The Algonauts Project 2025 Challenge: How the Human Brain Makes Sense of Multimodal Movies. _arXiv preprint_, arXiv:???. DOI: [https://doi.org/???](!!!)
 > * Boyle J, Pinsard B, Borghesani V, Paugam F, DuPre E, Bellec P. 2023. The Courtois NeuroMod project: quality assessment of the initial data release (2020). _2023 Conference on Cognitive Computational Neuroscience_.
