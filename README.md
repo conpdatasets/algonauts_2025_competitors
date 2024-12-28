@@ -184,15 +184,9 @@ These files are found at `../fmri/sub-0X/target_samples_number/`, and indicate t
 
 #### Terms
 
-By downloading and using the Algonauts Project 2025 challenge data, you agree to the following terms:
+The CNeuroMod data used in the Algonauts 2025 Challenge has been openly shared under a Creative Commons [CC0 license](https://creativecommons.org/public-domain/cc0/) by a subset of CNeuroMod participants through the Canadian Open Neuroscience Platform (CONP), funded by Brain Canada and based at McGill University, Canada. Participants provided informed consent both to participate in the CNeuroMod study conducted at CIUSSS du Centre-Sud-de-l’île-de-Montréal and, separately, to share their data through the CONP. The CC0 license enables the Algonauts 2025 team to freely create and distribute derivative works, without restrictions, and the Algonauts 2025 challenge data is likewise distributed under a CC0 license.
 
-1. You will use the Datasets only for non-commercial research and educational purposes.
-2. You agree that you will neither sell this dataset or its components nor monetize it.
-3. You agree that all presentations and publications resulting from any use of this dataset must cite the relevant work.
-4. In case you share or redistribute this dataset, you will (a) give appropriate credit by citing the relevant work, (b) indicate any changes that you have made to the dataset, and (c) share or redistribute any derivative data under the same Terms of Use.
-5. This data comes with no warranty or guarantee of any kind, and you accept full liability.
-6. You will require anyone on my team who utilizes these data to comply with this data use agreement.
-7. You are 18 or older, and you understand that the content of certain Challenge movie stimuli might be disturbing to some viewers.
+By downloading and using the Algonauts Project 2025 challenge data, you confirm that you are 18 or older, and you understand that the content of certain challenge movie stimuli might be disturbing to some viewers.
 
 #### Install DataLad
 
