@@ -242,4 +242,8 @@ The [`../code/challenge_baseline_model`](https://github.com/courtois-neuromod/al
 * **[`../02_encoding_model_training/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/02_encoding_model_training):** train the encoding models, and save their weights.
 * **[`../03_encoding_model_testing/`](https://github.com/courtois-neuromod/algonauts_2025.competitors/tree/main/code/challenge_baseline_model/03_encoding_model_testing):** test the encoding models.
 
-To run this code, you will first need to install [these libraries](https://github.com/courtois-neuromod/algonauts_2025.competitors/blob/main/requirements.txt).
+To run this code, you will first need to install the libraries in the [requirements.txt](https://github.com/courtois-neuromod/algonauts_2025.competitors/blob/main/requirements.txt). We recommend installing these libraries within a virtual environment (e.g., an [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) environment) using:
+
+```shell
+pip install -r requirements.txt
+```
