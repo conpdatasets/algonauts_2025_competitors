@@ -6,7 +6,7 @@ This GitHub repository contains data and code for the Algonauts Project 2025 cha
 
 
 
-## Overview
+## 🔍 Overview
 
 ### The Algonauts Project
 
@@ -62,7 +62,7 @@ If you use any of the resources provided for the Algonauts Project 2025 challeng
 > * Boyle J, Pinsard B, Borghesani V, Paugam F, DuPre E, Bellec P. 2023. The Courtois NeuroMod project: quality assessment of the initial data release (2020). _2023 Conference on Cognitive Computational Neuroscience_.
 
 
-## Data
+## 🧠 Data
 
 ![Algonauts 2025 logo](media/figure_2.png)
 
@@ -228,7 +228,7 @@ datalad get -r -J8 fmri/sub-01/*
 
 
 
-## Code
+## 💻 Code
 
 ### fMRI preprocessing
 
