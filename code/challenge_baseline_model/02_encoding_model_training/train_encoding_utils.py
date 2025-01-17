@@ -190,7 +190,13 @@ def load_stimulus_features(args, movie_split_names, movie_split_samples):
 				# using the corresponding stimulus feature sample minus the
 				# hrf_delay
 				elif mod == 'language':
-					idx = s + args.excluded_samples_start - args.hrf_delay
+					# In case there are no language features for the fMRI
+					# sample of interest minus the hrf_delay, model the fMRI
+					# sample using the first language feature sample
+					if s < args.hrf_delay:
+						idx = args.excluded_samples_start
+					else:
+						idx = s + args.excluded_samples_start - args.hrf_delay
 					# In case there are fewer language feature samples than
 					# fMRI samples minus the hrf_delay, use the last language
 					# feature sample available
