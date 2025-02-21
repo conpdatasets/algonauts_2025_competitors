@@ -197,7 +197,7 @@ To download the challenge data you first need to install [`DataLad`](https://www
 Once you have `DataLad`, you can use it to install the Algonauts 2025 challenge repository using:
 
 ```shell
-datalad install -r git@github.com:courtois-neuromod/algonauts_2025.competitors.git
+datalad install -r -s https://github.com/courtois-neuromod/algonauts_2025.competitors.git
 ```
 
 #### Download the challenge dataset
