@@ -192,6 +192,8 @@ By downloading and using the Algonauts Project 2025 challenge data, **you confir
 
 To download the challenge data you first need to install [`DataLad`](https://www.datalad.org/), a tool for versioning large data structures in a git repository available for Linux, OSX and Windows.
 
+<font color='red'><b>NOTE:</b></font> Dataset installation and download using DataLad are currently not supported from [Windows OS](https://handbook.datalad.org/en/latest/intro/windows.html). Please download the data using Linux or Mac.
+
 #### Install the dataset
 
 Once you have `DataLad`, you can use it to install the Algonauts 2025 challenge repository using:
