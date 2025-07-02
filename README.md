@@ -178,7 +178,7 @@ Each atlas file is a 3D array of shape of `(97 voxels, 115 voxels, 97 voxels)`, 
 
 ##### fMRI sample number for the test movie stimuli
 
-These files are found at `../fmri/sub-0X/target_samples_number/`, and indicate the number of fMRI response samples in each timeseries from Friends season 7 for each subject. These fMRI timeseries are withheld to test model accuracy throughout the Model Building phase, but the number of samples per timeseries is disclosed for each subject. You will use these files in tutorial `Section 4` to learn how to prepare challenge submissions.
+These files are found at `../fmri/sub-0X/target_samples_number/sub-0X_friends-s7_fmri_samples.npy`, and indicate the number of fMRI response samples in each timeseries from Friends season 7 for each subject. These fMRI timeseries are withheld to test model accuracy throughout the Model Building phase, but the number of samples per timeseries is disclosed for each subject. You will use these files in tutorial `Section 4` to learn how to prepare challenge submissions.
 
 ### Data download
 
