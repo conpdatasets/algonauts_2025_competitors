@@ -11,3 +11,8 @@
 	url = https://github.com/courtois-neuromod/movie10.stimuli.git
 	datalad-id = a9ff7995-4d2d-4ea7-9b23-ec17f0c66a61
 	datalad-url = https://github.com/courtois-neuromod/movie10.stimuli.git
+[submodule "stimuli/movies/ood"]
+	path = stimuli/movies/ood
+	url = https://github.com/courtois-neuromod/ood.stimuli.git
+	datalad-id = 5cd5fe4c-93fb-4b34-bb8f-175e2cf5cb8f
+	datalad-url = https://github.com/courtois-neuromod/ood.stimuli.git

@@ -15,3 +15,4 @@ jobs:
       email: courtois.neuromod@gmail.com
     secrets:
       ssh_key: ${{ github.event.repository.private && secrets.CNEUROMOD_BOT_SSH_KEY || secrets.CNEUROMOD_USER_BOT_SSH_KEY }}
+      git_token: ${{ github.event.repository.private && secrets.CNEUROMOD_BOT_TOKEN || '' }}
