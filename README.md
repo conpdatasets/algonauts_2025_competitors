@@ -81,7 +81,7 @@ During this first phase, you will train and test encoding models using movie sti
 
 #### Model selection phase (1 week, July 6 2025 - July 13 2025)
 
-During this second phase, the winning models will be selected based on the accuracy of their predicted fMRI responses for withheld out-of-distribution (OOD) movie stimuli.
+During this second phase, the winning models will be selected based on the accuracy of their predicted fMRI responses for movies that are out-of-distribution (OOD) with respect to the movie stimuli from the Model building phase, across several dimensions (see [this table](https://docs.google.com/spreadsheets/d/1troJygTjiXDNO-YqEoHvwlDwvyR628H7klyAqckuNaA/edit?usp=sharing) for an overview of these OOD dimensions).
 
 - **Model Testing.** At the beginning of the model selection phase, we will provide 2 hours of OOD movie stimuli and withhold the corresponding fMRI responses for each of the four subjects. The nature of the OOD movie stimuli will not be revealed until the beginning of the model selection phase. To participate in the winners selection process, you can submit your encoding model's predicted fMRI responses for the OOD movie stimuli to [Codabench](https://www.codabench.org/competitions/4313/).
 
