@@ -38,7 +38,7 @@ You can run this tutorial either on [Colab](https://colab.research.google.com/dr
 ### Challenge Rules
 
 1. Challenge participants can use any encoding model derived from any source and trained on any type of data. However, using recorded brain responses for Friends season 7 or the OOD movie stimuli is prohibited.
-2. Challenge participants can make an unlimited number of submissions during the model building phase, and a maximum of ten submissions during the model selection phase (the leaderboard of each phase is automatically updated after every submission). Each challenge participant can only compete using one account. Creating multiple accounts to increase the number of possible submissions will result in disqualification to the challenge.
+2. Challenge participants can make an unlimited number of submissions during the model building phase, and a maximum of ten submissions during the model selection phase. Each challenge participant can only compete using one account. Creating multiple accounts to increase the number of possible submissions will result in disqualification to the challenge.
 3. The winning models will be determined based on their performance in predicting fMRI responses for the OOD movie stimuli during the model selection phase.
 4. To promote open science, challenge participants who wish to be considered for the winners selection will need to submit a short report (~4-8 pages) describing their encoding algorithm to a preprint server (e.g. arXiv, bioRxiv), and send the PDF or preprint link to the Organizers by filling out [this form](https://forms.gle/RbouWUqYrm9pcWMXA). You must submit the challenge report by the challenge report submission deadline to be considered for the evaluation of the challenge outcome. Furthermore, while all reports are encouraged to link to their code (e.g. GitHub), the top-3 performing teams are required to make their code openly available. Participants that do not make their approach open and transparent cannot be considered. Along with monetary prizes, the top-3 performing teams will be invited to present their encoding models during a talk at the [Cognitive Computational Neuroscience (CCN)](https://2025.ccneuro.org/) conference held in Amsterdam (Netherlands) in August 2025.
 
@@ -108,6 +108,12 @@ The `.mkv` files for Movie10 are found at `../stimuli/movies/movie10/<movie>/`, 
 - **`movie`:** String indicating the movie name.
 - **`movie_split`:** Number indicating the movie split. Each movie was split into several segments to limit the duration of consecutive fMRI data acquisition runs.
 
+###### OOD movies
+
+The `.mkv` files for the OOD movies and are found at `../algonauts_2025.competitors/stimuli/movies/ood/<movie>/`, and have the naming convention `task-<movie><movie_split>_video.mkv`, where:
+- **`movie`:** String indicating the movie name.
+- **`movie_split`:** Number indicating the movie split. Each movie was split into two segments to limit the duration of consecutive fMRI data acquisition runs.
+
 ##### .tsv files (timestamped movie transcripts)
 
 The `.tsv` files contain the timestamped movie transcripts, that is, transcripts of spoken content (dialogue) in the movie stimuli, for seasons 1 to 7 of Friends and for Movie10.
@@ -124,6 +130,14 @@ The `.tsv` files for seasons 1 to 7 of Friends are found at `../stimuli/transcri
 The `.tsv` files for Movie10 are found at `../stimuli/transcripts/movie10/<movie>/`, and have the naming convention `movie10_<movie><movie_split>.tsv`, where:
 - **`movie`:** String indicating the movie name.
 - **`movie_split`:** Number indicating the movie split.
+
+###### OOD movies
+
+The `.tsv` files for the OOD movies are found at `../algonauts_2025.competitors/stimuli/transcripts/ood/<movie>/`, and have the naming convention `ood_<movie><movie_split>.tsv`, where:
+- **`movie`:** String indicating the movie name.
+- **`movie_split`:** Number indicating the movie split. Each movie was split into two segments to limit the duration of consecutive fMRI data acquisition runs.
+
+<font color='red'><b>NOTE:</b></font> Because the OOD movie `chaplin` did not contain spoken dialogue, the transcripts for this movie are not provided.
 
 ###### .tsv file content
 
@@ -178,7 +192,13 @@ Each atlas file is a 3D array of shape of `(97 voxels, 115 voxels, 97 voxels)`, 
 
 ##### fMRI sample number for the test movie stimuli
 
+###### Friends (season 7)
+
 These files are found at `../fmri/sub-0X/target_samples_number/sub-0X_friends-s7_fmri_samples.npy`, and indicate the number of fMRI response samples in each timeseries from Friends season 7 for each subject. These fMRI timeseries are withheld to test model accuracy throughout the Model Building phase, but the number of samples per timeseries is disclosed for each subject. You will use these files in tutorial `Section 4` to learn how to prepare challenge submissions.
+
+###### OOD movies
+
+These files are found at `../fmri/sub-0X/target_samples_number/sub-0X_ood_fmri_samples.npy`, and indicate the number of fMRI response samples in each timeseries from the OOD movies for each subject. These fMRI timeseries are withheld to test model accuracy throughout the Model selection phase, but the number of samples per timeseries is disclosed for each subject. You will use these files in tutorial `Section 5` to learn how to prepare challenge submissions.
 
 ### Data download
 
@@ -228,7 +248,15 @@ You can also download subdatasets of the challenge dataset, by giving the corres
 datalad get -r -J8 fmri/sub-01/*
 ```
 
+#### Update the challenge dataset with the data from the Model selection phase
 
+If you already installed and downloaded the data from the Model building phase, you can install the new data from the Model selection phase without having to reinstall the entire dataset with:
+
+```shell
+datalad update --merge
+```
+
+and then download the new data with `datalad get`, as explained above.
 
 ## 💻 Code
 
