@@ -49,6 +49,8 @@ You can run this tutorial either on [Colab](https://colab.research.google.com/dr
 - [Data](https://forms.gle/kmgYdxR92H4nUBfH7)
 - [Challenge Development Kit Tutorial](https://colab.research.google.com/drive/1fop0zvaLBLBagvJRC-HDqGDSgQElNWZB?usp=sharing)
 - [Codabench Challenge Submission Page](https://www.codabench.org/competitions/4313/)
+- [Post-challenge indefinite in-distribution benchmark](https://www.codabench.org/competitions/9482/)
+- [Post-challenge indefinite out-of-distribution benchmark](https://www.codabench.org/competitions/9483/)
 - [Challenge Overview Video](https://youtu.be/KvLDpsIO2eg)
 - [Development Kit Tutorial Walkthrough Video](https://youtu.be/S_RxMiLUZ_w)
 - [Codabench Submission Walkthrough Video](https://youtu.be/w7zpnoKtusE)
