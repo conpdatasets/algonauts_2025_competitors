@@ -1,0 +1,292 @@
+{
+  "title": "CNeuroMod Algonauts 2025 ",
+  "description": "This repository contains data and code for the Algonauts Project 2025 challenge.\n",
+  "creators": [
+    {
+      "name": "The Courtois project on neuronal modelling",
+      "abbreviation": "CNeuroMod",
+      "roles": [
+        {
+          "value": "Contributor"
+        }
+      ]
+    },
+    {
+      "name": "Algonauts",
+      "abbreviation": "Algonauts",
+      "roles": [
+        {
+          "value": "Contributor"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "information": {
+        "value": "fMRI, movie"
+      }
+    }
+  ],
+  "version": "2025",
+  "privacy": "open",
+  "licenses": [
+    {
+      "name": "CC0"
+    }
+  ],
+  "distributions": [
+    {
+      "formats": [
+        "HDF5, MKV"
+      ],
+      "size": 90,
+      "unit": {
+        "value": "GB"
+      },
+      "access": {
+        "landingPage": "https://algonautsproject.com/2025/archive.html",
+        "authorizations": [
+          {
+            "value": "public"
+          }
+        ]
+      }
+    }
+  ],
+  "primaryPublications": [
+    {
+      "title": "The Algonauts Project 2025 Challenge: How the Human Brain Makes Sense of Multimodal Movies.",
+      "publicationVenue": "arXiv",
+      "authors": [
+        {
+          "fullName": "Alessandro T. Gifford",
+          "firstName": "Alessandro",
+          "middleInitial": "T",
+          "lastName": "Gifford",
+          "affiliations": [
+            {
+              "name": "Freie Universität Berlin, Berlin, Germany"
+            }
+          ]
+        },
+        {
+          "fullName": "Domenic Bersch",
+          "firstName": "Domenic",
+          "middleInitial": "",
+          "lastName": "Bersch",
+          "affiliations": [
+            {
+              "name": "Goethe Universität Frankfurt, Frankfurt am Main, Germany"
+            }
+          ]
+        },
+        {
+          "fullName": "Marie St-Laurent",
+          "firstName": "Marie",
+          "middleInitial": "",
+          "lastName": "St-Laurent",
+          "affiliations": [
+            {
+              "name": "Centre de recherche de l’institut universitaire de gériatrie de Montréal, Montréal, Canada"
+            }
+          ]
+        },
+        {
+          "fullName": "Basile Pinsard",
+          "firstName": "Basile",
+          "middleInitial": "",
+          "lastName": "Pinsard",
+          "affiliations": [
+            {
+              "name": "Centre de recherche de l’institut universitaire de gériatrie de Montréal, Montréal, Canada"
+            }
+          ]
+        },
+        {
+          "fullName": "Julie Boyle",
+          "firstName": "Julie",
+          "middleInitial": "",
+          "lastName": "Boyle",
+          "affiliations": [
+            {
+              "name": "Centre de recherche de l’institut universitaire de gériatrie de Montréal, Montréal, Canada"
+            }
+          ]
+        },
+        {
+          "fullName": "Lune Bellec",
+          "firstName": "Lune",
+          "middleInitial": "",
+          "lastName": "Bellec",
+          "affiliations": [
+            {
+              "name": "Centre de recherche de l’institut universitaire de gériatrie de Montréal, Montréal, Canada"
+            },
+            {
+              "name": "Université de Montréal, Montréal, Canada"
+            }
+          ]
+        },
+        {
+          "fullName": "Aude Oliva",
+          "firstName": "Aude",
+          "middleInitial": "",
+          "lastName": "Oliva",
+          "affiliations": [
+            {
+              "name": "Computer Science and Artificial Intelligence Laboratory, MIT, USA"
+            }
+          ]
+        },
+        {
+          "fullName": "Gemma Roig",
+          "firstName": "Gemma",
+          "middleInitial": "",
+          "lastName": "Roig",
+          "affiliations": [
+            {
+              "name": "Goethe Universität Frankfurt, Frankfurt am Main, Germany"
+            }
+          ]
+        },
+        {
+          "fullName": "Radoslaw M. Cichy",
+          "firstName": "Radoslaw",
+          "middleInitial": "M",
+          "lastName": "Cichy",
+          "affiliations": [
+            {
+              "name": "Freie Universität Berlin, Berlin, Germany"
+            }
+          ]
+        }
+      ],
+      "dates": [
+        {
+          "date": "",
+          "description": "",
+          "type": {
+            "value": " 2025"
+          }
+        }
+      ],
+      "identifier": {
+        "identifier": "https://doi.org/10.48550/arXiv.2501.00504",
+        "identifierSource": "arXiv"
+      }
+    }
+  ],
+  "isAbout": [
+    {
+      "name": "Homo sapiens",
+      "identifier": {
+        "identifier": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+        "identifierSource": "NCBI Taxonomy Database"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "value": "benchmark, neuro-AI, fMRI, encoding, movie, naturalistic experiment"
+    }
+  ],
+  "extraProperties": [
+    {
+      "category": "subjects",
+      "values": [
+        {
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "category": "files",
+      "values": [
+        {
+          "value": "500"
+        }
+      ]
+    },
+    {
+      "category": "CONP_status",
+      "values": [
+        {
+          "value": "Canadian"
+        }
+      ]
+    },
+    {
+      "category": "origin_consortium",
+      "values": [
+        {
+          "value": "The Courtois Project on Neuronal Modelling"
+        }
+      ]
+    },
+    {
+      "category": "origin_institution",
+      "values": [
+        {
+          "value": "Centre de Recherche de l'Institut de Gériatrie de Montréal"
+        }
+      ]
+    },
+    {
+      "category": "origin_city",
+      "values": [
+        {
+          "value": "Montreal"
+        }
+      ]
+    },
+    {
+      "category": "origin_province",
+      "values": [
+        {
+          "value": "Quebec"
+        }
+      ]
+    },
+    {
+      "category": "origin_country",
+      "values": [
+        {
+          "value": "Canada"
+        }
+      ]
+    },
+    {
+      "category": "logo",
+      "values": [
+        {
+          "value": "https://algonautsproject.com/img/2024/logo_light.png"
+        }
+      ]
+    },
+    {
+      "category": "contact",
+      "values": [
+        {
+          "value": "Courtois NeuroMod team, courtois.neuromod@gmail.com"
+        }
+      ]
+    },
+    {
+      "category": "derivedFrom",
+      "values": [
+        {
+          "value": "https://github.com/courtois-neuromod/cneuromod.processed"
+        }
+      ]
+    },
+    {
+      "category": "REB_statement",
+      "values": [
+        {
+          "value": "In submitting this dataset for inclusion, I declare that participants have provided a valid informed consent to the de-identification and deposit of their data in an open-access portal."
+        }
+      ]
+    }
+  ]
+}
