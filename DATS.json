@@ -188,7 +188,31 @@
   ],
   "keywords": [
     {
-	"value": ["benchmark", "neuro-AI", "fMRI", "encoding", "movie", "naturalistic experiment"]
+      "value": "Human Connectome Project tasks"
+    },
+    {
+      "value": "movies"
+    },
+    {
+      "value": "structural MRI"
+    },
+    {
+      "value": "fMRI"
+    },
+    {
+      "value": "videogame"
+    },
+    {
+      "value": "vision"
+    },
+    {
+      "value": "multimodal"
+    },
+    {
+      "value": "naturalistic tasks"
+    },
+    {
+      "value": "language"
     }
   ],
   "extraProperties": [
