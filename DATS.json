@@ -24,7 +24,7 @@
   "types": [
     {
       "information": {
-        "value": "fMRI, movie"
+          "value": ["fMRI", "movie"]
       }
     }
   ],
@@ -38,7 +38,7 @@
   "distributions": [
     {
       "formats": [
-        "HDF5, MKV"
+        "HDF5", "MKV"
       ],
       "size": 90,
       "unit": {
@@ -188,7 +188,7 @@
   ],
   "keywords": [
     {
-      "value": "benchmark, neuro-AI, fMRI, encoding, movie, naturalistic experiment"
+	"value": ["benchmark", "neuro-AI", "fMRI", "encoding", "movie", "naturalistic experiment"]
     }
   ],
   "extraProperties": [
