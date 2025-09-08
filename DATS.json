@@ -24,7 +24,12 @@
   "types": [
     {
       "information": {
-          "value": ["fMRI", "movie"]
+          "value": "fMRI"
+      }
+    },
+    {
+      "information": {
+          "value": "movie"
       }
     }
   ],
